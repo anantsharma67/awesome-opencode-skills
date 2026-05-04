@@ -123,3 +123,12 @@ Do NOT use this skill when:
 - Constraints and drivers are key to professional rigs
 - Poor rigging leads to poor animation, regardless of model quality
 
+## Execution Strategy
+
+The agent should:
+
+1. Identify if the task involves animation or rigging
+2. Break down the workflow into rig setup, constraints, and animation
+3. Apply structured rigging techniques (IK/FK, drivers, constraints)
+4. Validate output for deformation and usability
+5. Optimize for reuse and performance
