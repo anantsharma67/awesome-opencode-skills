@@ -1,134 +1,103 @@
 ---
 name: blender-rigging-animation
-description: Advanced workflow for creating, controlling, and animating character rigs in Blender using constraints, IK/FK systems, drivers, and deformation techniques.
+description: Workflow for setting up, rigging, and animating characters in Blender with a clear execution pipeline for generating animation outputs.
 ---
 
 # Blender Rigging & Animation
 
 ## Overview
 
-This skill provides a structured workflow for building high-quality rigging systems and animations in Blender.
+This skill enables Claude to guide users through setting up Blender, creating rigs, and producing animation-ready assets.
 
-It focuses on creating reusable, flexible rigs using constraints, drivers, and deformation tools, ensuring realistic motion and production-ready animation pipelines.
+It focuses on transforming a static model into a fully rigged and animated output.
 
 ---
 
-## When to Use
+## Setup
 
-Use this skill when:
+Before using this skill:
 
-- Creating character rigs for animation
-- Building reusable animation systems
-- Animating objects with controlled motion
-- Improving deformation quality in models
-- Working on game assets or cinematic animations
+1. Install Blender (latest version)
+2. Open a new project
+3. Import or create a 3D model
+4. Switch to "Animation" workspace
+
+---
+
+## When to Use This Skill
+
+- Creating character animations
+- Preparing assets for games or videos
+- Building reusable rig systems
 
 ---
 
 ## When NOT to Use
 
-Do NOT use this skill when:
-
-- Working with static models (no animation needed)
-- Using pre-rigged assets without modification
-- Performing simple transformations (move/rotate/scale only)
-- Rendering without animation requirements
+- Static modeling tasks
+- Simple transformations without animation
+- Non-3D workflows
 
 ---
 
-## Core Capabilities
+## Example Use Case
 
-- Custom rig creation using armatures
-- IK/FK switching systems
-- Constraint-based motion control
-- Driver-based procedural animation
-- Bendy bone deformation systems
-- Animation keyframe control
+> “Animate a simple character waving”
+
+Claude should:
+- Load the model
+- Create a basic armature
+- Add IK constraints for arms
+- Insert keyframes for waving motion
+- Render animation output
 
 ---
 
 ## Workflow
 
-### 1. Rig Setup
-- Create armature structure
+### 1. Model Preparation
+- Ensure mesh is clean and properly scaled
+- Apply transforms
+
+### 2. Rig Creation
+- Add armature
 - Define bone hierarchy
-- Assign vertex groups to mesh
+- Bind mesh using automatic weights
 
-### 2. Constraint System
-- Apply IK constraints for limbs
-- Configure FK chains for manual control
-- Add limit constraints for realistic motion
+### 3. Constraint Setup
+- Apply IK for limbs
+- Add rotation limits
+- Configure FK controls
 
-### 3. Control System
-- Create control bones for animation
-- Use custom shapes for usability
-- Implement pickers if needed
-
-### 4. Advanced Deformation
-- Use bendy bones for smooth curves
-- Add drivers for dynamic behavior
-- Apply corrective shape keys if required
-
-### 5. Animation
+### 4. Animation
 - Insert keyframes for movement
-- Use graph editor for refinement
-- Smooth transitions and timing
+- Adjust timing in timeline
+- Refine using graph editor
 
-### 6. Validation
-- Test rig under multiple poses
-- Fix deformation issues
-- Optimize for performance
+### 5. Render Output
+- Set camera and lighting
+- Configure render settings
+- Export animation
 
 ---
 
 ## Output Expectations
 
-- Fully functional rig with control system
-- Smooth deformation during animation
-- Clean and reusable rig hierarchy
-- Production-ready animation setup
+- Fully rigged model
+- Smooth animation
+- Exportable video or asset
 
 ---
 
 ## Best Practices
 
-- Keep rigs modular and reusable
-- Avoid unnecessary constraints
-- Use naming conventions consistently
-- Test rigs early and often
-
----
-
-## Optional Integrations
-
-- Export rigs for Unity/Unreal pipelines
-- Combine with Blender Geometry Nodes for procedural animation
-- Use alongside motion capture workflows
-
----
-
-## Stack / Tools
-
-- Blender (Armature System)
-- Graph Editor
-- Drivers & Constraints
-- Shape Keys
-- Animation Timeline
+- Keep rigs simple initially
+- Test animations early
+- Use consistent naming
 
 ---
 
 ## Notes
 
-- Rigging complexity grows exponentially with features
-- Constraints and drivers are key to professional rigs
-- Poor rigging leads to poor animation, regardless of model quality
-
-## Execution Strategy
-
-The agent should:
-
-1. Identify if the task involves animation or rigging
-2. Break down the workflow into rig setup, constraints, and animation
-3. Apply structured rigging techniques (IK/FK, drivers, constraints)
-4. Validate output for deformation and usability
-5. Optimize for reuse and performance
+- Rigging complexity increases quickly
+- IK systems improve natural movement
