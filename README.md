@@ -69,6 +69,7 @@ Each folder contains a standalone workflow skill.
 |---|---|
 | `claude-code-toolkit` | Complete AI-assisted engineering workflow system |
 | `context-engineering` | Structured context and memory management for AI workflows |
+| `tree-ring-memory` | Local-first project memory lifecycle for AI coding agents |
 | `claude-squad-multi-agent` | Multi-agent orchestration and coordination systems |
 | `claude-subconscious-workflows` | Reflective reasoning and background optimization systems |
 | `memory-management` | Lightweight persistent memory workflows |
